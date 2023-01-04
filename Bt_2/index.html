@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <!-- header -->
+  <header>
+    <p>Bài tập 1</p>
+  </header>
+  <body>
+    <div class="container-fluid">
+      <!-- sidebar -->
+      <div id="sidebar" class="sidebar col-3 col-xl-3">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+          ×
+        </a>
+        <img src=" avt.jfif" alt="" />
+        <p style="margin-left: 40px">Admin</p>
+        <hr />
+
+        <img src="avt.jfif" alt="" />
+        <p style="margin-left: 40px">Nguyễn Thị A</p>
+        <hr />
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-success" type="submit">Search</button>
+        </form>
+
+        <button class="home   col-3 colxl-3 bg-dark text-light">Trang chủ</button>
+        <button class="home   col-3 colxl-3 bg-dark text-light">
+          Quản lý sản phẩm
+        </button>
+
+        <a class="list col-3 colxl-3 text-light"> Danh sách </a>
+      </div>
+      <!-- sidebar -->
+
+      <!-- main -->
+      <div id="main" class="main-content">
+        <!-- navbar -->
+        <div class="topnav">
+          <div>
+            <a href="javascript:void(0);" class="icon" onclick="openNav()">
+              <i class="fa fa-bars"></i>
+            </a>
+            <a href="#home">Trang chủ</a>
+            <a href="">Đăng xuất</a>
+          </div>
+          <form class="d-flex split" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+        <!-- navbar -->
+
+        <!-- content -->
+        <div class="content col-12 col-md-12">
+          <!-- navbar-content -->
+          <div class="top col-12 col-md-12">
+            <p>Trang chủ</p>
+            <a class="col-md-1 col-1" href="">Trang chủ</a>
+          </div>
+          <!-- navbar-content -->
+
+          <div class="info col-12 col-md-12">
+            <div class="neworder item col-12 col-md-3">
+              <div>
+                <p class="number">150</p>
+                <p>New order</p>
+              </div>
+              <button class="m-info bg-black bg-opacity-25">More info</button>
+            </div>
+            <div class="rate item col-12 col-md-3">
+              <div>
+                <p class="number">53%</p>
+                <p>Bounce rate</p>
+              </div>
+              <button class="m-info bg-black bg-opacity-25">More info</button>
+            </div>
+            <div class="user item col-12 col-md-3">
+              <div>
+                <p class="number">44</p>
+                <p>User registrantions</p>
+              </div>
+              <button class="m-info bg-black bg-opacity-25">More info</button>
+            </div>
+            <div class="visitor item col-12 col-md-3">
+              <div>
+                <p class="number">65</p>
+                <p>Unique visitor</p>
+              </div>
+              <button class="m-info bg-black bg-opacity-25">More info</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function openNav() {
+        document.getElementById("sidebar").style.display = "block";
+        document.getElementById("sidebar").style.width = "250px";
+        // document.getElementById("main").style.marginLeft = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("sidebar").style.display = "none";
+
+        // document.getElementById("main").style.marginLeft = "0";
+      }
+    </script>
+  </body>
+  <footer>
+    <a href="https://www.facebook.com/Libra245">@Sáng</a>
+  </footer>
+</html>

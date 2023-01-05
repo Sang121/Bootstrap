@@ -1,82 +1,53 @@
 header{
-    display: flex;
-    justify-content: center;
-    background-color:#ddd ;
-    height: 70px;
-    font-size: x-large;
-    align-items: center;
-    
+  display: flex;
+  justify-content: center;
+  background-color:#ddd ;
+  height: 70px;
+  font-size: x-large;
+  align-items: center;
+  
+}
+.hide{
+  display: none;
 }
 a{
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 .container-fluid{
-    
-    margin-top: 10px;
-   
-    
+  
+  margin-top:10px;
+ 
+  
+
+  
 }
 
 /* .sidebar */
 .sidebar{
-  color: aliceblue;
-    background-color: black;
-    padding: 10px;
-    width: 0;
-  position: fixed;
-  z-index: 1;
-  top:70px;
-  left: 0;
-    height: 100%;
-    display: none;
-    overflow-x: hidden;
-  transition: 0.5s;
+color: aliceblue;
+  background-color: black;
+  padding: 10px;
+  width: 250px;
+position: fixed;
+z-index: 1;
+top:70px;
+left: 0;
+  height: 100%;
+display: none;
+  overflow-x: hidden;
+transition: 0.5s;
 }
 .sidebar img{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    float: left;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  float: left;
 }
 .sidebar a{
-    display: block;
-  transition: 0.3s;
+  display: block;
+transition: 0.3s;
 }
-
-.home{
-    width: 100%;
-    height: 50px;
-
-    margin-top: 10px;
-
-    text-align: left;
-    border-radius:10px;
-    
-}
-
-.list{
-    width: 100%;
-    height: 50px;
-    text-decoration: none;
-    margin: 10px;
-     margin: 0;
-     padding: 15px;
-}
-.list:hover{
-  border-radius:10px;
-  background-color: rgb(88, 85, 82);
-  opacity: 0.9;
-
- 
-}
-
-#main {
-    transition: margin-left .5s;
-    
-    }
-
-    /* navbar */
 .sidebar .closebtn {
   position: absolute;
   top: 0;
@@ -84,135 +55,194 @@ a{
   font-size: 36px;
   margin-left: 50px;
   color:white;
+  }
+
+.trangchu{
+  width: 100%;
+  
+}
+.trangchu a{
+  height: 40px;
+  color: white;
+  background-color:rgb(66, 66, 66);
+  padding-left: 5px;
+  border-radius: 10px;
+}
+.trangchu .m-item{
+  
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding-left: 25px;
+
+}
+.trangchu a:hover{
+  background-color: rgb(153, 150, 150);
+}
+.manage{
+  width: 100%;
+}
+.manage a{
+  color: white;
+  height: 40px;
+   border-radius: 10px;
+  padding-left: 5px;
+  background-color:rgb(66, 66, 66);
+}
+
+.manage .m-item{
+  
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding-left: 25px;
+}
+.manage a:hover{
+  background-color: rgb(153, 150, 150);
+}
+
+
+#main {
+  transition: margin-left .5s;
+ background-color: #ddd;
+  
+  }
+ 
+
+  /* navbar */
+.topnav {
+  padding: 10px;
+  overflow: hidden;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+.topnav a {
+  float: left;
+  color: black   ;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 15px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+ 
+}
+
+/* Create a right-aligned (split) link inside the navigation bar */
+.topnav form.split {
+  float: right;
+  color: white;
+}
+.topnav a.icon{
+
+  left: 0;
+}
+.top{
+  padding: 5px;
+  background-color: #ddd;
+  border-radius: 15px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+ justify-content: space-between;
+}
+.top p{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Time";
+}
+.top a
+{ 
+  width: 100px;
+  color: rgb(12, 165, 101);
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top a:hover{
+  background-color: antiquewhite;
+}
+
+/* Sản phẩm */
+
+.row{
+  padding: 10px; 
+
+}
+.thongtin{
+  padding: 10px;
+border-radius: 5px;
+ background-color: rgb(250, 250, 250);
+ 
 }
 
 
 
-.main-content{
-    width: 100%;
+.theloai{
+
+  border-radius: 5px;
+  
+ 
+  
+}
+.theloai .a{
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+}
+.theloai button{
+  border: none;
+  border-radius:5px ;
+}
+.submit{
+  background-color:rgb(255, 255, 255);
+}
+.submit:hover{
+  background-color: rgb(23, 138, 48);
+}
+.cancel{
+  background-color: white;
+}
+.cancel:hover{
+  background-color: rgb(232, 18, 36);
+}
+.dulieu{
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(250, 250, 250);
 }
 
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .topnav {
-    overflow: hidden;
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
-  }
-  
-  .topnav a {
-    float: left;
-    color: black   ;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    border-radius: 15px;
-  }
-  
-  .topnav a:hover {
-    background-color: #ddd;
-   
-  }
-  
-  /* Create a right-aligned (split) link inside the navigation bar */
-  .topnav form.split {
-    float: right;
-    color: white;
-  }
-  .topnav a.icon{
 
-    left: 0;
-  }
-  .top{
-    padding: 5px;
-    background-color: #ddd;
-    border-radius: 15px;
-    margin-top: 10px;
-    display: flex;
-    flex-direction: row;
-   justify-content: space-between;
-  }
-  .top p{
-    font-size: 20px;
-    font-weight: bold;
-    font-family: "Time";
-  }
-  .top a
-  { 
-    width: 100px;
-    color: rgb(12, 165, 101);
-    border-radius: 15px;
-    background-color: #ddd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .top a:hover{
-    background-color: antiquewhite;
-  }
-  .info{
-    
-    display: flex;
-    flex-direction: row;
-    height: 250px;
-    
-  }
-  .item{
-    margin:5px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
-  }
-  
-  .item p{
-    font-size: 20px;
-    margin: 15px;
-  }
-  .item .number{
-    font-size: 35px;
-    font-weight: bolder;
-  }
-  .m-info{
-    border-radius:0 0 10px 10px;
-    height: 30px;
-   
-    display: flex;
-    justify-content: center;
-    padding: 0;
-  }
-  .m-info:hover{
-    background-color: aliceblue;
-  }
-  .item>button{
-    border: none;
-    
-  }
-  .item:hover{
-    background-color: antiquewhite;
-  }
-  .neworder{
-    background-color:rgb(12, 193, 172) ;
-   
-  }
-.rate{
-  background-color: rgb(62, 151, 121);
+footer{
+justify-content: center;
+align-items: center;
+background-color:rgb(255, 255, 255);
+height: 30px;
+
 }
-.user{
-  background-color: rgb(255, 221, 0);
+
+footer P{
+
+display: flex;
+justify-content: center;
+align-items: center;
 }
-.visitor{
-  background-color: rgb(123, 20, 20);
-}
-@media only screen and (max-width:500px) {
+@media only screen and (max-width:800px) {
   /* For mobile phones: */
   .info{
     width: 100%;
@@ -220,22 +250,9 @@ body {
   }
   .topnav{
     clear: both;
-    width: 100%;
-    flex-direction: column;
+   flex-direction: column;
+    
   }
-}
-footer{
-  
 
-  justify-content: center;
-  align-items: center;
-  background-color:#ddd;
-  height: 30px;
-  
-}
-footer P{
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+ 
+  }
